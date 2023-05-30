@@ -27,3 +27,123 @@ steps:
     runtimeStack: 'NODE|16'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu2'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-eaus'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgo-float-eaus_group'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-asea'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgoflaotasea'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-apac3'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgofloatapac3'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-apac4'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgofloatapac4'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-auea'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgofloatauea'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-br'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgofloatbr'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-cace'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgofloatcace'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-eaus-2'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgofloateaus2'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-eu4'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgofloateu-4'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-eu4'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgofloateu-4'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-eu1'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgofloateu1'
+    verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: 'MSFree'
+    appType: functionAppLinux
+    appName: 'csgo-float-eu3'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'zipDeploy' 
+    resourceGroupName: 'csgofloateu3'
