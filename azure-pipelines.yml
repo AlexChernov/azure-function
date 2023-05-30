@@ -10,15 +10,20 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: |
-    pwd
-    ls
-  displayName: 'Debug'
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/src'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
     verbose: true
+- task: AzureFunctionApp@2
+  inputs:
+    azureSubscription: b90bcfd4-cb51-46fc-9dfd-c3c980a3d584
+    appType: functionAppLinux
+    appName: csgo-float-eu2
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    runtimeStack: 'NODE|16'
+    deploymentMethod: 'auto' 
+    resourceGroupName: 'csgofloateu2'
