@@ -28,6 +28,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu2'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -38,6 +39,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgo-float-eaus_group'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -48,6 +50,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgoflaotasea'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -58,6 +61,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloatapac3'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -68,6 +72,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloatapac4'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -78,6 +83,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloatauea'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -88,6 +94,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloatbr'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -98,6 +105,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloatcace'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -108,6 +116,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateaus2'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -118,6 +127,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu-4'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -128,6 +138,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu-4'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -138,6 +149,7 @@ steps:
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu1'
     verbose: true
+    condition: or(succeeded(),failed())
 - task: AzureFunctionApp@2
   inputs:
     azureSubscription: 'MSFree'
@@ -147,3 +159,5 @@ steps:
     runtimeStack: 'NODE|16'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu3'
+    verbose: true
+    condition: or(succeeded(),failed())
