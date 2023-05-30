@@ -25,5 +25,5 @@ steps:
     appName: 'csgo-float-eu2'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     runtimeStack: 'NODE|16'
-    deploymentMethod: 'auto' 
+    deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu2'
