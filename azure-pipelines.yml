@@ -16,7 +16,7 @@ steps:
   displayName: 'Debug'
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(System.Workspace)'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
