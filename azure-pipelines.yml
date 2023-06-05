@@ -145,7 +145,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-eu1'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu1'
     verbose: true
