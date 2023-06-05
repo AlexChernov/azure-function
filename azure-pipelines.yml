@@ -24,7 +24,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-eu2'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu2'
     verbose: true
@@ -35,7 +35,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-eaus'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgo-float-eaus_group'
     verbose: true
@@ -46,7 +46,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-flaot-asea'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgoflaotasea'
     verbose: true
@@ -57,7 +57,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-apac3'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloatapac3'
     verbose: true
@@ -68,7 +68,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-apac4'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloatapac4'
     verbose: true
@@ -79,7 +79,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-auea'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloatauea'
     verbose: true
@@ -90,7 +90,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-br'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloatbr'
     verbose: true
@@ -101,7 +101,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-cace'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloatcace'
     verbose: true
@@ -112,7 +112,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-eaus-2'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateaus2'
     verbose: true
@@ -123,7 +123,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-eu4'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu-4'
     verbose: true
@@ -134,7 +134,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-eu4'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu-4'
     verbose: true
@@ -156,7 +156,7 @@ steps:
     appType: functionAppLinux
     appName: 'csgo-float-eu3'
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    runtimeStack: 'NODE|16'
+    runtimeStack: 'NODE|18'
     deploymentMethod: 'zipDeploy' 
     resourceGroupName: 'csgofloateu3'
     verbose: true
